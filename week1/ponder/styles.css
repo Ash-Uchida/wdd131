@@ -3,7 +3,9 @@
 body {
     background-color: #b4bcc2;
     text-align: center;
+    margin: 20px 20px 20px 20px;
     border: 1px solid #798087;
+    padding: 40px 40px 40px 40px;
 
 }
 
@@ -15,18 +17,34 @@ p {
 hr {
     border: 2px solid #265f93;
     display: block;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
+img {
+    /* border: 20px solid #798087; */
+    width: 20%;
+    height: auto;
+}
+
+
+#topics {
+    /* border: 20px solid #798087; */
+    width: 20%;
+    height: auto;
+    justify-content: center;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 ul {
     list-style-type: none;
     text-align: left;
-    display: inline-block;
+    padding: 0;
 }
 
 li {
     font-size: 18px;
     margin-bottom: 10px;
 }
-
