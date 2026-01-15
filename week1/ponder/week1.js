@@ -32,4 +32,27 @@ selectElem.addEventListener('change', function(){
 
 
 })
+
+// function doSomething(){
+// can maybe try display none to earse what was there previously
+// console.log('do whatever you want here)
+// } -> this is a function
+
+// this is for looking for events, ('the event that has happened', the function){}
+// document.addEventListener('DOMcontentLoaded', doSomething())
+
+
+// _________________________________________________________________________________________
+// const doSomething = (data) => {
+    // this.data = {name: 'example'};
+// };
+// document.addEventListener('DOMContentLoaded', function() {
+    // const data = {}
+    // doSomething(data);
+// })
+
+// ____________________________________________________________________
+// this.style.display = "none"
                 
+// change one as display block to display none, and keep rotating
+//or swap the urls
