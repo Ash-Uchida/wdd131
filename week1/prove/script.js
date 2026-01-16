@@ -1,7 +1,23 @@
-// // explain how  classList.toggle("active") works
 
-// What does this code do?
-// const box = document.querySelector(".highlight");
-// box.classList.toggle("active");
+let choose = document.querySelector('#theme');
+let page = document.querySelector('body');
+let logo = document.getElementById("logo2");
 
-// Toggles the presence of the "active" class on the element with class "highlight"
+choose.addEventListener('change', changeTheme);
+
+function changeTheme(){
+    let current = choose.value;
+
+    if (current === 'Dark'){
+        document.querySelector(".blue").style.color = "#9c6dd0";
+        document.querySelector("body").style.color = "white";
+        page.style.backgroundColor = "black";
+        logo.style.display = 'none';
+    }
+    else {
+        document.querySelector(".blue").style.color = "#487aaa";
+        document.querySelector("body").style.color = "black";
+        page.style.backgroundColor = "white";
+        logo.style.display = 'block';
+    }
+}
