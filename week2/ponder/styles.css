@@ -94,3 +94,14 @@ nav.show{
 
 }
 
+/* 
+if you want to do grid instead of flexbox
+
+main{
+display: grid
+grid-templete-columns: 1fr 1fr
+grid-template-rows: auto
+} 
+
+then for table mode make it into 1fr, 1fr, 1fr*/
+

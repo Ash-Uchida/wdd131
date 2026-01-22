@@ -1,11 +1,6 @@
 // we need to hide the dropdown menu when it gets bigger
 // make the dropdown menu button clickable
 
-// varilbe.classlist.add or .remove
-// in css: .hid{
-// display:none
-// }
-// then we mag=ve a media , hide, display:block
 
 const button = document.querySelector(".menu-btn");
 const nav = document.querySelector("nav");
@@ -19,3 +14,20 @@ button.onclick = function(){
     }
 }
 
+
+// simplier example to do what I did
+
+// TEACHER EXAMPLE make sure to include lines 5 and 6
+// button.addEventListener('click', () => {
+//     nav.classList.add('active');
+// });
+
+
+// this is just to automaticlly close the window TEACH EXAMPLE
+// the downside is that it would take much longer to load complicated sites
+
+// window.addEventListener('resize', () =>{
+//     if (window.innerWidth >= 700){
+//         nav.classList.remove('active')
+//     }
+// })
