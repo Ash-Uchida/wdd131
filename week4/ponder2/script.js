@@ -18,7 +18,6 @@ function openModal(e) {
 
     // console.log(e.target.src.replace('-sm.', '-full.'))
     
-    
 }
 // Close modal on button click
 closeButton.addEventListener('click', () => {
