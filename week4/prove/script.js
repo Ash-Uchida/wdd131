@@ -25,6 +25,9 @@ function openModal(e){
     }
     modalImage.src = e.target.src.replace("cool_pic.png", "big_pic.png");
     modal.showModal();
+
+    // modal.style.display = 'block'
+    // but if do this we need to then add a close modal which is the exact same function but disply:none
 }
 
 closeButton.addEventListener("click", () =>{
