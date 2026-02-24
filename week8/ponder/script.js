@@ -6,9 +6,9 @@ const aCourse = {
   logo: 'images/js-logo.png',
   // This is an array of objects
   sections: [
-      { sectionNum: 1, roomNum: 'STC 353', enrolled: 26, days: 'TTh', instructor: 'Bro T'},
-      { sectionNum: 2, roomNum: 'STC 347', enrolled: 28, days: 'TTh', instructor: 'Sis A'},
-      { sectionNum: 3, roomNum: 'STC 333', enrolled: 24, days: 'MW', instructor: 'Sis B'}
+      { sectionNum: 1, roomNum: 'STC 353', enrolled: 0, days: 'TTh', instructor: 'Bro T'},
+      { sectionNum: 2, roomNum: 'STC 347', enrolled: 0, days: 'TTh', instructor: 'Sis A'},
+      { sectionNum: 3, roomNum: 'STC 333', enrolled: 0, days: 'MW', instructor: 'Sis B'}
   ],
 
   // this method takes a sectionNum like 1,2,3 
