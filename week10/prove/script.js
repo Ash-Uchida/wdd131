@@ -80,9 +80,13 @@ function searchFilter(){
   const userInput = document.querySelector('#recipe').value.toLowerCase();
 
   const results = recipes.filter((key) => {
-    return key.name.toLowerCase().includes(userInput);
+    const nameMatch = key.name.toLowerCase().includes(userInput);
+    const tagMatch = key.tags.some((tag) => tag.toLowerCase().includes(userInput));
+    const descMatch = key.description.toLowerCase().includes(userInput);
+    return nameMatch ||descMatch ||tagMatch;
   
   })
+  
 
   //now replace everything with results
   main.innerHTML= ""
