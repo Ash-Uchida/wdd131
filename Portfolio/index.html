@@ -13,9 +13,9 @@
             <img class="logo" src="images/logo.png" alt="logo image">
             <nav>
                 <a href="index.html">Home</a>
-                <a href="#">Projects</a>
-                <a href="#">About Me</a>
-                <a href="#">Contact Info</a>
+                <a href="pages/project.html">Projects</a>
+                <a href="pages/me.html">About Me</a>
+                <a href="pages/contact.html">Contact Info</a>
             </nav>
         </div>
     </header>
@@ -23,9 +23,10 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Ash Uchida Portfolio</h2>
+                <h1>Ash Uchida Portfolio</h1>
                 <p>At the intersection of Software Engineering, Data Science, and Cybersecurity, I build applications that are as secure as they are efficient. From orchestrating large-scale technical events to developing serverless platforms, I thrive on turning complicated problems into streamlined digital solutions. Currently maintaining a 4.0 academic standard at BYU-Idaho.</p>
                 <a href="images/Ash_Uchida_Resume.pdf" class="cta-button" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="https://www.linkedin.com/in/ash-uchida/" class="link-button" target="_blank" rel="noopener noreferrer">Linkden</a>
             </div>
         </div>
     </section>
@@ -41,8 +42,10 @@
             <button class="edu">Education</button>
             <!-- This is where I list all the classes I've taken so far plus links to see the projects from these classes -->
             <!-- maybe also my transcript -->
+
+            <!-- can have it as a new page or a pop up, prob not pop up though cause it would be hard to design -->
         </div>
-        <img class="left-box" src="images/hero1.jpeg" alt="filler image">
+        <img class="left-box" src="images/hero1.jpeg" alt="filler image" aria-hidden="true">
 
         <div class="experience" alt="filler image">
             <h3>Experience</h3>
@@ -51,7 +54,7 @@
             <!-- This is where i list all the jobs I've worked. List maybe a rotater through my jobs? prob -->
             <button class="exp">Experience</button>
         </div>
-        <img src="images/hero2.jpeg">
+        <img src="images/hero2.jpeg" alt="filler image" aria-hidden="true">
     </section>
 
 
@@ -59,28 +62,42 @@
     <section class="projects">
         <h2>Projects</h2>
         <p>Imma change this layout so this is just a filler image at the moment</p>
-        <img class="filler" src="images/filler.jpeg">
+        <div class="project-hor">
+            <button class="l-arrow">◀</button>
+            <img class="filler" src="images/filler.jpeg" aria-hidden="true">
+            <button class="r-arrow">▶</button>
+        </div>
     </section>
 
 
 
     <section class="society">
         <div class="card">
-            <img src="images/so1.webp" alt="filler image">
-            <p class="left">write stuff here</p>
+            <h4>Hackathon Secretary</h4>
+            <img src="images/so3.webp" alt="filler image" aria-hidden="true">
+            <p class="left">In this leadership role at BYU-I, I served as the operational backbone for the university's hackathon series. I was responsible for ensuring clear communication between committee members and the successful execution of a 24-hour high-pressure event. My role involved: <br><br> Managing logistics for 150+ participants, ensuring a seamless experience from registration to the closing ceremony. <br><br>Evaluating technical projects as a judge, providing feedback on student-led innovations.<br><br>Driving team productivity by transforming complex planning discussions into clear, executable action items.</p>
         </div>
 
         <div class="card">
-            <img src="images/so2.jpeg" alt="filler image">
-            <p>write stuff here</p>
+            <h4>Radio Society</h4>
+            <img src="images/so1.webp" alt="filler image" aria-hidden="true">
+            <p >write stuff here</p>
         </div>
 
         <div class="card">
-            <img src="images/so3.webp" alt="filler image">
+            <h4>Cloud Society</h4>
+            <img src="images/so2.jpeg" alt="filler image" aria-hidden="true">
             <p class="right">write stuff here</p>
         </div>
-
     </section>
+
+
+    <footer>
+        <div class="conatiner">
+            <h3>Contact Me</h3>
+            <p>Email: ash.uchida0w0@gmail.com   |   Phone number: 208 671 1577</p>
+        </div>
+    </footer>
     
 </body>
 </html>
