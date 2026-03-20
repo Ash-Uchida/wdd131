@@ -350,3 +350,52 @@ footer h3{
 .society a:hover{
   transform: none;
 }
+article{
+  justify-self: center;
+  background-color: var(--accent1-color);
+  color: aliceblue;
+  text-align: center;
+  margin: 50px;
+  padding: 35px;
+  border-radius: 20px;
+  width: 70%;
+}
+.article{
+  justify-self: center;
+  color:var(--background-color);
+  background-color: var(--secondary-color);
+  text-align: center;
+  margin: 50px;
+  padding: 35px;
+  border-radius: 20px;
+  width: 70%;
+}
+.sideByside{
+  display: grid;
+  grid-template-areas: 
+  'edHTML img';
+  grid-template-columns: 3fr 1fr;
+  margin: 100px;
+  gap: 15px;
+}
+.edHTML{
+  background-color: var(--accent2-color);
+  padding: 30px;
+  border-radius: 20px;
+  grid-area: edHTML;
+}
+.long{
+  background: linear-gradient(rgba(0, 0, 0, 0.3)), url('images/long.png');
+  background-size: 40%;
+  background-position:center;
+  background-attachment: fixed;
+
+  border-radius: 20px;
+  grid-area: img;
+
+}
+.side{
+  grid-area: img;
+  border-radius: 20px;
+}
+
