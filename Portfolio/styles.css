@@ -195,6 +195,7 @@ nav a:hover {
   background-color: var(--accent2-color);
   color:var(--secondary-color) ;
   transform: translateY(-5px);
+  border: solid 1px #3C3E49;
 }
 .exp{
   display: inline-block;
@@ -211,6 +212,7 @@ nav a:hover {
   background-color: var(--accent2-color);
   color:var(--secondary-color) ;
   transform: translateY(-5px);
+  border: solid 1px #3C3E49;
 }
 .l-arrow, .r-arrow{
   background-color: var(--accent1-color);
@@ -345,4 +347,6 @@ footer h3{
   background-color: var(--accent1-color);
   color: aliceblue;
 }
-
+.society a:hover{
+  transform: none;
+}
