@@ -275,13 +275,10 @@ nav a:hover {
 .card p{
   background-color:var(--accent1-color) ;
   color:aliceblue;
+  border-radius: 20px;
+  margin: 10px;
 }
-.left{
-  border-radius: 15px 0px 0px 15px;
-}
-.right{
-  border-radius: 0px 15px 15px 0px;
-}
+
 footer{
   display: flex;
   justify-content: center;
@@ -297,8 +294,7 @@ footer{
   margin: 35px;
 }
 footer p{
-  color: aliceblue;
-  background-color: #4C7A8D;
+  background-color: #C2CDE9;
   border-radius: 20px;
 }
 footer h3{
@@ -323,14 +319,17 @@ footer h3{
   display: grid;
   grid-template-areas: 
   'h2 img'
-  'p img';
+  'p img'
+  'button img';
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
 .me-img{
   border-radius: 20px;
-  width: 100%;
+  width: 70%;
   grid-area: img;
+  justify-self: center;
+  align-self: center;
 }
 .me h2{
   margin-top: 50px;
@@ -339,3 +338,11 @@ footer h3{
 .me p{
   grid-area: p;
 }
+.me a{
+  grid-area: button;
+  width: 30%;
+  justify-self: center;
+  background-color: var(--accent1-color);
+  color: aliceblue;
+}
+
