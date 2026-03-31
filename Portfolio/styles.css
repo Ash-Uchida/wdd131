@@ -375,7 +375,7 @@ article{
   grid-template-areas: 
   'edHTML img';
   grid-template-columns: 3fr 1fr;
-  margin: 100px;
+  margin: 10px;
   gap: 15px;
 }
 .edHTML{
@@ -397,6 +397,7 @@ article{
 .side{
   grid-area: img;
   border-radius: 20px;
+  width: 100%;
 }
 
 #article{
@@ -464,4 +465,30 @@ article{
 
 #h1{
   color: var(--background-color);
+}
+
+
+.more{
+  display: flex;
+  justify-self: center;
+  background-color: var(--secondary-color);
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 1em;
+  text-decoration: none;
+  color:var(--accent2-color) ;
+  transition: transform 0.2s ease;
+  margin-bottom: 20px;
+}
+.more:hover{
+  background-color: var(--accent2-color);
+  color:var(--secondary-color) ;
+  transform: translateY(-5px);
+  border: solid 1px #3C3E49;
+}
+
+.tags{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
 }
