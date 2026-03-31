@@ -236,6 +236,7 @@ nav a:hover {
 .project-hor{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 /* filler */
@@ -379,6 +380,7 @@ article{
   gap: 15px;
 }
 .edHTML{
+
   background-color: var(--accent2-color);
   padding: 30px;
   border-radius: 20px;
@@ -514,8 +516,7 @@ article{
 
 }
 .more1{
-  display: flex;
-  justify-self: center;
+  display: inline-block;
   background-color: var(--secondary-color);
   padding: 12px 28px;
   border-radius: 50px;
@@ -533,4 +534,35 @@ article{
 }
 .tags{
   text-align: center;
+}
+.nobot{
+  margin-bottom: 0;
+  margin-top: 70px;
+}
+.innerProjects{
+  background-color: var(--accent1-color);
+  border-radius: 20px;
+  width: 35%;
+
+}
+.innerProjects p{
+  color: aliceblue;
+}
+.cta-button1 {
+  display: flex;
+  justify-self: center;
+  margin: 30px;
+  background-color: var(--accent2-color);
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 1em;
+  text-decoration: none;
+  color:var(--secondary-color) ;
+  transition: transform 0.2s ease;
+}
+.cta-button1:hover{
+  background-color: var(--secondary-color);
+  color:var(--accent2-color) ;
+  transform: translateY(-5px);
+
 }
