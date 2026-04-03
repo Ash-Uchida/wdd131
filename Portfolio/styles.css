@@ -567,7 +567,9 @@ article{
 
 }
 
-
+.rotate{
+    width: 100%;
+  }
 
 /* lets see where we need to add the media queries: these are like for tablets */
 @media (max-width: 1000px){
@@ -599,15 +601,11 @@ article{
     display: block;
 
     background-color: var(--secondary-color);
-    margin: 50px;
-    padding: 50px;
+    margin: 10px;
+    padding: 10px;
     border-radius: 20px;
   }
 
-  /* ayyyyyyyyyyy this werido works yaaayyyy ayya ayayy */
-  .rotate{
-    width: 70%;
-  }
 
   /* contact info submit button and it's form width size cause it gets too small*/
   #submit-btn{
@@ -624,8 +622,24 @@ article{
 /* these are for like phone formats */
 @media (max-width: 675px){
   /* main index.html  */
+
+  .project-hor{
+    /* lets completely change its layout for mobile devices */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
   .innerProjects{
     width: 100%;
+    order: 1; /* this box goes ontop of the buttons*/
+  }
+  .l-arrow, .r-arrow{
+    order: 2;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
   }
 
 
@@ -634,6 +648,10 @@ article{
     width: 90%;
     padding: 15px;
     margin: 50px;
+  }
+  .body{
+    padding: 5px;
+    margin: 0;
   }
   
 }
