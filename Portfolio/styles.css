@@ -419,6 +419,11 @@ article{
   border-radius: 20px;
   width: 100%;
 }
+.sideSocity{
+  grid-area: img;
+  border-radius: 20px;
+  width: 100%;
+}
 
 #article{
   color:aliceblue;
@@ -694,6 +699,7 @@ article{
   .side{
     display: none;
   }
+  
   .edHTML{
     width: 100%;
     padding: 5px;
