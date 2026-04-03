@@ -604,7 +604,10 @@ article{
     border-radius: 20px;
   }
 
-
+  /* ayyyyyyyyyyy this werido works yaaayyyy ayya ayayy */
+  .rotate{
+    width: 70%;
+  }
 
   /* contact info submit button and it's form width size cause it gets too small*/
   #submit-btn{

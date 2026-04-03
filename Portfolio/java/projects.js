@@ -55,6 +55,8 @@ const projects = [
   }
 ];
 
+// use week 10 js as my outline for this part
+
 let main;
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -62,7 +64,17 @@ window.addEventListener("DOMContentLoaded", () => {
 
   document.querySelector("#article").addEventListener('input', searchFilter);
 
-  searchFilter(); // load all projects on page load
+  //now we want the link from roate.js to work when it comes to filtering
+  const params = new URLSearchParams(window.location.search);
+  const searchValue = params.get("search"); //the search is the name of the param in the url if its there cause we added it in the rotate.js list
+  
+  if(searchValue){
+    document.querySelector("#article").value = searchValue; //checks to see if the roate.js button is trying to filter the search
+    searchFilter();
+  }
+  else{
+    searchFilter(); //loads our function to show projecst
+  }
 });
     
 
