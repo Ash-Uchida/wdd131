@@ -379,6 +379,14 @@ article{
   margin: 10px;
   gap: 15px;
 }
+.sideByside1{
+  display: grid;
+  grid-template-areas: 
+  'edHTML img';
+  grid-template-columns: 3fr 1fr;
+  margin: 10px;
+  gap: 15px;
+}
 .edHTML{
 
   background-color: var(--accent2-color);
@@ -387,6 +395,16 @@ article{
   grid-area: edHTML;
 }
 .long{
+  background: linear-gradient(rgba(0, 0, 0, 0.3)), url('images/long.png');
+  background-size: 40%;
+  background-position:center;
+  background-attachment: fixed;
+
+  border-radius: 20px;
+  grid-area: img;
+
+}
+.long1{
   background: linear-gradient(rgba(0, 0, 0, 0.3)), url('images/long.png');
   background-size: 40%;
   background-position:center;
@@ -469,7 +487,24 @@ article{
   color: var(--background-color);
 }
 
-
+.moreTrans{
+  display: flex;
+  justify-self: center;
+  background-color: var(--secondary-color);
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 1em;
+  text-decoration: none;
+  color:var(--accent2-color) ;
+  transition: transform 0.2s ease;
+  margin-bottom: 20px;
+}
+.moreTrans:hover{
+  background-color: var(--accent2-color);
+  color:var(--secondary-color) ;
+  transform: translateY(-5px);
+  border: solid 1px #3C3E49;
+}
 .more{
   display: flex;
   justify-self: center;
@@ -617,6 +652,16 @@ article{
     padding: 15px;
     margin: 50px;
   }
+  .me{
+    text-align: center;
+    background-color:var(--accent2-color) ;
+    padding: 25px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 }
 /* these are for like phone formats */
@@ -641,7 +686,48 @@ article{
     height: 60px;
     font-size: 1.5em;
   }
+  body{
+    /* fix this for phones */
+    padding: 5px;
+  }
 
+  .side{
+    display: none;
+  }
+  .edHTML{
+    width: 100%;
+    padding: 5px;
+  }
+  .sideByside{
+    display: flex;
+  }
+  .sideByside1{
+    /* display flex for column transcrip button */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .long1{
+    display: none;
+  }
+  .moreTrans{
+    align-self: center;   
+    width: auto; 
+  }
+
+  .me{
+    text-align: center;
+    background-color:var(--accent2-color) ;
+    padding: 25px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .link-button{
+    align-self: center;
+  }
 
   /* the width cause it gets too small */
   .form{
@@ -649,10 +735,7 @@ article{
     padding: 15px;
     margin: 50px;
   }
-  .body{
-    padding: 5px;
-    margin: 0;
-  }
+
   
 }
 /* these boxes are slightly problematic -----------------------> */ 
