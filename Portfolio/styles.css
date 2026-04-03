@@ -667,6 +667,15 @@ article{
     flex-direction: column;
     justify-content: center;
   }
+  .sideByside1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .moreTrans{
+    align-self: center;   
+    width: auto; 
+  }
 
 }
 /* these are for like phone formats */
